@@ -71,7 +71,7 @@ export default {
       this.$emit('input', this.masked ? evt.target.value : unformat(evt.target.value, this.precision))
     }
     blur (evt) {
-      this.$emit('input', this.masked ? evt.target.value : unformat(evt.target.value, this.precision))
+      this.$emit('blur', evt)
     }
   }
 }
